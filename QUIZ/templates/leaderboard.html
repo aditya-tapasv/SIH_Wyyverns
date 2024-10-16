@@ -1,0 +1,24 @@
+<!-- File: templates/leaderboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Leaderboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon_logo.jpg') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Leaderboard</h2>
+        <ol>
+            {% for score in scores %}
+                <li>Score: {{ score }}</li>
+            {% else %}
+                <li>No scores yet!</li>
+            {% endfor %}
+        </ol>
+        <a href="{{ url_for('quiz') }}">Back to Quiz</a>
+    </div>
+</body>
+</html>

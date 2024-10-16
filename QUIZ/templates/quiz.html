@@ -1,0 +1,96 @@
+<!-- File: templates/quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon_logo.jpg') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='Picture1.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Quiz Time!</h2>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="A"> A. Berlin</label><br>
+                <label><input type="radio" name="q1" value="B"> B. Madrid</label><br>
+                <label><input type="radio" name="q1" value="C"> C. Paris</label><br>
+                <label><input type="radio" name="q1" value="D"> D. Rome</label>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What is the largest ocean on Earth?</p>
+                <label><input type="radio" name="q2" value="A"> A. Atlantic Ocean</label><br>
+                <label><input type="radio" name="q2" value="B"> B. Indian Ocean</label><br>
+                <label><input type="radio" name="q2" value="C"> C. Arctic Ocean</label><br>
+                <label><input type="radio" name="q2" value="D"> D. Pacific Ocean</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. Who wrote "To Kill a Mockingbird"?</p>
+                <label><input type="radio" name="q3" value="A"> A. J.K. Rowling</label><br>
+                <label><input type="radio" name="q3" value="B"> B. Harper Lee</label><br>
+                <label><input type="radio" name="q3" value="C"> C. Mark Twain</label><br>
+                <label><input type="radio" name="q3" value="D"> D. Ernest Hemingway</label>
+            </div>
+            
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. What is the chemical symbol for gold?</p>
+                <label><input type="radio" name="q4" value="A"> A. Au</label><br>
+                <label><input type="radio" name="q4" value="B"> B. Ag</label><br>
+                <label><input type="radio" name="q4" value="C"> C. Fe</label><br>
+                <label><input type="radio" name="q4" value="D"> D. Pb</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. What planet is known as the Red Planet?</p>
+                <label><input type="radio" name="q5" value="A"> A. Venus</label><br>
+                <label><input type="radio" name="q5" value="B"> B. Earth</label><br>
+                <label><input type="radio" name="q5" value="C"> C. Mars</label><br>
+                <label><input type="radio" name="q5" value="D"> D. Jupiter</label>
+            </div>
+            
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

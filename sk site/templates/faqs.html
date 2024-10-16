@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="icon_logo.jpg" alt="Indian Constitution Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="amendments.html">Amendments</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="faqs" class="page active">
+            <h1>Frequently Asked Questions</h1>
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <!-- Example Videos -->
+                    <div class="carousel-slide"><video controls><source src="faq1.mp4" type="video/mp4"></video></div>
+                    <div class="carousel-slide"><video controls><source src="faq2.mp4" type="video/mp4"></video></div>
+                    <!-- Add more video slides here -->
+                </div>
+                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <article>
+                <h2>Common Questions</h2>
+                <p>Answers to frequently asked questions...</p>
+                <!-- Add more content here -->
+            </article>
+        </div>
+        <div class="fireworks"></div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+        </div>
+        <div class="footer-info">
+            &copy; 2024 Indian Constitution Guide. All rights reserved.
+            &copy; Team: Sri Vatsa Krishna, Vicky Kumar, Shivashish Roy, Aditya Pandey, Sarthak Mirani & Sreya.
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function showSlide(index) {
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            document.querySelector('.carousel-slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(++currentSlide);
+        }
+
+        function prevSlide() {
+            showSlide(--currentSlide);
+        }
+
+        showSlide(currentSlide); // Initialize carousel
+    </script>
+</body>
+</html>

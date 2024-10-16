@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Constitution Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .carousel-container {
+            position: relative;
+            width: 964.8px;
+            height: 600px;
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* This will ensure the images fit perfectly without distortion */
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+
+    <header>
+        <div class="logo">
+            <img src="icon_logo.jpg" alt="Indian Constitution Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="amendments.html">Amendments</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to the Indian Constitution Guide</h1>
+                <p>Your comprehensive resource for understanding the Indian Constitution.</p>
+                <p>Your Companion for learning IC, Our Responsibilities</p>
+            </div>
+        </section>
+
+        <section id="carousel">
+            <h2>Featured Videos</h2>
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/6BHhWw0/1595847102-image-0.jpg" alt="Slide 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/Jq60CB2/Screenshot-2024-09-30-22-22-08-37-680d03679600f7af0b4c700c6b270fe7.jpg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/V3HsX6P/Screenshot-2024-09-30-22-13-50-76-680d03679600f7af0b4c700c6b270fe7.jpg" alt="Slide 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/XyYJ5v0/Screenshot-2024-09-30-22-13-30-65-680d03679600f7af0b4c700c6b270fe7.jpg" alt="Slide 4">
+                    </div>
+                </div>
+                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <div class="fireworks"></div>
+        </section>
+
+        <section id="preamble">
+            <h2>The Preamble to the Indian Constitution</h2>
+            <p><strong>Text of the Preamble:</strong></p>
+            <blockquote>
+                <p>“We, the People of India, having solemnly resolved to constitute India into a Sovereign Socialist Secular Democratic Republic and to secure to all its citizens:</p>
+                <ul>
+                    <li><strong>JUSTICE</strong>, social, economic, and political;</li>
+                    <li><strong>LIBERTY</strong> of thought, expression, belief, faith, and worship;</li>
+                    <li><strong>EQUALITY</strong> of status and of opportunity;</li>
+                    <li>and to promote among them all</li>
+                    <li><strong>FRATERNITY</strong> assuring the dignity of the individual and the unity and integrity of the Nation;</li>
+                </ul>
+                <p>In our Constituent Assembly this 26th day of November 1949, do hereby adopt, enact and give to ourselves this Constitution.”</p>
+            </blockquote>
+
+            <h3>Significance of the Preamble</h3>
+            <ul>
+                <li><strong>Introductory Statement:</strong> The Preamble acts as an introductory statement to the Constitution, outlining the fundamental values and principles upon which the Constitution is based.</li>
+                <li><strong>Core Objectives:</strong> It highlights the core objectives of the Constitution, including the commitment to justice, liberty, equality, and fraternity.</li>
+                <li><strong>Declaration of Intent:</strong> It reflects the intent of the framers to establish a democratic republic with a commitment to socio-economic justice.</li>
+                <li><strong>Source of Authority:</strong> It affirms that the authority of the Constitution derives from the people of India, emphasizing the democratic nature of the Republic.</li>
+            </ul>
+
+            <h3>Components of the Preamble</h3>
+            <ul>
+                <li><strong>Sovereign:</strong> India is an independent nation, free from external control or influence.</li>
+                <li><strong>Socialist:</strong> The term "Socialist" indicates a commitment to the principles of socialism, including the reduction of economic inequality and the welfare of all citizens.</li>
+                <li><strong>Secular:</strong> India treats all religions equally, with no state religion. The state respects all religions and ensures equal treatment for all citizens regardless of their religious beliefs.</li>
+                <li><strong>Democratic:</strong> India is governed by elected representatives and the rule of law. It ensures that the people have a say in the functioning of the government.</li>
+                <li><strong>Republic:</strong> The head of state is elected, and not a hereditary monarch. This reflects the democratic principles of equality and accountability.</li>
+            </ul>
+
+            <h3>Objectives Mentioned</h3>
+            <ul>
+                <li><strong>Justice:</strong> The Preamble aims to provide social, economic, and political justice to all citizens. This involves removing barriers that perpetuate injustice and inequality.</li>
+                <li><strong>Liberty:</strong> It guarantees individual freedoms, including freedom of thought, expression, belief, faith, and worship.</li>
+                <li><strong>Equality:</strong> It ensures equal status and opportunity for all citizens, promoting an egalitarian society.</li>
+                <li><strong>Fraternity:</strong> The Preamble emphasizes the need for unity and integrity among the people, promoting a sense of brotherhood and dignity.</li>
+            </ul>
+
+            <h3>Interpretation by the Judiciary</h3>
+            <ul>
+                <li><strong>Guiding Principles:</strong> The Preamble has been used by the Indian judiciary to interpret the Constitution's provisions and resolve ambiguities.</li>
+                <li><strong>Constitutional Amendments:</strong> The Preamble has been amended once, in 1976, to include the words “Socialist,” “Secular,” and “Integrity,” as part of the 42nd Amendment Act.</li>
+                <li><strong>Judicial Pronouncements:</strong> The Supreme Court of India has affirmed the Preamble's role in understanding the spirit of the Constitution. It has been used to uphold fundamental rights and guide judicial decisions.</li>
+            </ul>
+
+            <h3>Historical Context</h3>
+            <ul>
+                <li><strong>Drafting:</strong> The Preamble was drafted by the Constituent Assembly of India, chaired by Dr. B.R. Ambedkar, and adopted on November 26, 1949.</li>
+                <li><strong>Inspiration:</strong> The Preamble was influenced by the Preamble of the U.S. Constitution and other democratic constitutions, but it was tailored to reflect the unique socio-political context of India.</li>
+            </ul>
+
+            <h3>Significance in Modern Context</h3>
+            <ul>
+                <li><strong>Constitutional Foundation:</strong> The Preamble continues to be a foundational document for understanding and interpreting the Constitution of India. It embodies the aspirations and values of the Indian people.</li>
+                <li><strong>Educational and Public Discourse:</strong> It serves as a vital reference point in educational contexts and public discussions about constitutional values and principles.</li>
+            </ul>
+        </section>
+
+        <section id="articles">
+            <h2>Latest Articles</h2>
+            <div class="article-list">
+                <article>
+                    <h3><a href="article1.html">Understanding the Preamble</a></h3>
+                    <p>An in-depth analysis of the preamble of the Indian Constitution.</p>
+                </article>
+                <article>
+                    <h3><a href="article2.html">Fundamental Rights Explained</a></h3>
+                    <p>Explore the fundamental rights enshrined in the Indian Constitution.</p>
+                </article>
+                <!-- Add more articles here -->
+            </div>
+        </section>
+
+        <section id="amendments">
+            <h2>Recent Amendments</h2>
+            <div class="amendment-list">
+                <article>
+                    <h3><a href="amendment1.html">Amendment 1: Key Changes</a></h3>
+                    <p>Overview of the first major amendment to the Indian Constitution.</p>
+                </article>
+                <article>
+                    <h3><a href="amendment2.html">Amendment 2: New Provisions</a></h3>
+                    <p>Details of the second amendment and its implications.</p>
+                </article>
+                <!-- Add more amendments here -->
+            </div>
+        </section>
+
+        <section id="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <article>
+                    <h3><a href="faq1.html">What is the Indian Constitution?</a></h3>
+                    <p>Frequently asked questions about the Indian Constitution.</p>
+                </article>
+                <article>
+                    <h3><a href="faq2.html">How is the Constitution amended?</a></h3>
+                    <p>Answers to common questions about constitutional amendments.</p>
+                </article>
+                <!-- Add more FAQs here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+        </div>
+        <div class="footer-info">
+            &copy; 2024 Indian Constitution Guide. All rights reserved.
+            &copy; Team: Sri Vatsa Krishna, Vicky Kumar, Shivashish Roy, Aditya Pandey, Sarthak Mirani & Sreya.
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function showSlide(index) {
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            document.querySelector('.carousel-slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(++currentSlide);
+        }
+
+        function prevSlide() {
+            showSlide(--currentSlide);
+        }
+
+        showSlide(currentSlide); // Initialize carousel
+
+        // Hide loader when content is loaded
+        window.addEventListener('load', () => {
+            document.querySelector('.loader').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

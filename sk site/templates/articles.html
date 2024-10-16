@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles of the Indian Constitution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="{{ url_for('static', filename='icon_logo.jpg') }}">
+    <style>
+        .carousel-container {
+            position: relative;
+            width: 964.8px;
+            height: 600px;
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* This will ensure the images fit perfectly without distortion */
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="icon_logo.jpg" alt="Indian Constitution Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="amendments.html">Amendments</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carousel Slideshow Section -->
+        <div class="carousel-container">
+            <div class="carousel-slides">
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/6BHhWw0/1595847102-image-0.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/Jq60CB2/Screenshot-2024-09-30-22-22-08-37-680d03679600f7af0b4c700c6b270fe7.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/V3HsX6P/Screenshot-2024-09-30-22-13-50-76-680d03679600f7af0b4c700c6b270fe7.jpg" alt="Slide 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://i.ibb.co/XyYJ5v0/Screenshot-2024-09-30-22-13-30-65-680d03679600f7af0b4c700c6b270fe7.jpg" alt="Slide 4">
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <article>
+            <h2>Introduction to Articles</h2>
+            <p>Detailed description of various articles...</p>
+        </article>
+
+        <section id="articles">
+            <h1>Articles on the Indian Constitution</h1>
+            <div class="article-list">
+                <article>
+                    <h2><a href="article1.html">Understanding the Preamble</a></h2>
+                    <p>This article provides a detailed analysis of the Preamble to the Indian Constitution, its significance, and its components.</p>
+                </article>
+                <!-- Add more articles here -->
+            </div>
+        </section>
+        <section>
+        
+            <h2><a href="article2.html">Fundamental Rights Explained</a></h2>
+                    <p>An exploration of the fundamental rights guaranteed by the Indian Constitution, their importance, and their implications for citizens.</p>
+                </article>
+                <article>
+                    <h2><a href="article3.html">Directive Principles of State Policy</a></h2>
+                    <p>Overview of the Directive Principles, their role in guiding state policy, and their impact on governance in India.</p>
+                </article>
+                <article>
+                    <h2><a href="article4.html">The Structure of the Indian Parliament</a></h2>
+                    <p>Detailed discussion on the structure and functions of the Indian Parliament, including the Lok Sabha and the Rajya Sabha.</p>
+                </article>
+                <article>
+                    <h2><a href="article5.html">The Role of the President of India</a></h2>
+                    <p>Analysis of the powers and responsibilities of the President of India, including their role in the federal structure.</p>
+                </article>
+                <article>
+                    <h2><a href="article6.html">Judicial Review in India</a></h2>
+                    <p>Explanation of the concept of judicial review and its significance in maintaining the Constitution's supremacy.</p>
+                </article>
+                <article>
+                    <h2><a href="article7.html">The Federal Structure of India</a></h2>
+                    <p>Discussion on the federal structure of the Indian Constitution, including the distribution of powers between the Union and States.</p>
+                </article>
+                <article>
+                    <h2><a href="article8.html">Constitutional Amendments: A Historical Overview</a></h2>
+                    <p>Historical overview of constitutional amendments in India, including significant changes and their impact.</p>
+                </article>
+                <article>
+                    <h2><a href="article9.html">Emergency Provisions in the Constitution</a></h2>
+                    <p>Analysis of the emergency provisions in the Indian Constitution, including their types and implications.</p>
+                </article>
+                <article>
+                    <h2><a href="article10.html">Comparative Analysis: Indian Constitution vs. U.S. Constitution</a></h2>
+                    <p>Comparative study of the Indian Constitution and the U.S. Constitution, highlighting similarities and differences.</p>
+                </article>
+            </div>
+            <div class="fireworks"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+        </div>
+        <div class="footer-info"></div>
+            &copy; 2024 Indian Constitution Guide. All rights reserved.
+            &copy; Team: Sri Vatsa Krishna, Vicky Kumar, Shivashish Roy, Aditya Pandey, Sarthak Mirani & Sreya.
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function showSlide(index) {
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            document.querySelector('.carousel-slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(++currentSlide);
+        }
+
+        function prevSlide() {
+            showSlide(--currentSlide);
+        }
+
+        showSlide(currentSlide); // Initialize carousel
+    </script>
+    
+</body>
+</html>
